@@ -69,8 +69,3 @@ print("\n---------------------------------------------------------------------")
 print("TSV sentence count: {}  speaker-id count: {}".format(count - 1 , len(speaker_id_set))) # count -1 for 1-based indexing
 print("female_rerecording_count: {}  male_rerecording_count: {}".format(female_rerecording_count, male_rerecording_count))
 print("---------------------------------------------------------------------")
-
-# ---------------------------------------------------------------------
-# TSV sentence count: 20000  speaker-id count: 81
-# female_rerecording_count: 237  male_rerecording_count: 282
-# ---------------------------------------------------------------------
