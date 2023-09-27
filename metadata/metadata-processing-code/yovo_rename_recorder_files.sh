@@ -13,14 +13,21 @@ $ ls -1prt *.wav | grep -v "/$" | cat -n | while read n f; do mv -n "${f}" "$(pr
 # iroro:~/Downloads/yovo_renaming/15751-16000_Adenekan_Mariam:_0}$
 $ ls -1pt *.wav | grep -v "/$" | cat -n | while read n f; do mv -n "${f}" "$(printf "%05d" $((15750 + $n)) ).${f#*.}"; done
 
-Explanation of one-liner: 
-(0) `ls -1`: list files with each entry on an new line
-	- `p` puts a slash behind any directories (N/A) in this case, but good practice 
-	- `rt` are for sorting in order of modification time-stamp and time reversal, i.e. oldest entries first 
-(1) Processing directories of 250 each towards the end of the 20k batch, all the time-stamps were the same or 
-	already sorted by oldest first, so we remove `-r`. 
-	Note: If the file names are ordered (0001-01000) we do not need `t` to get the correct ordering
-(2) `grep`
-(3) `cat`
-(3) pads indexes up to 5 digits since we have 25000 files (up to 5 digits, i.e. less that 99999)
-(4) maintains original extension. 
+# Explanation of one-liner:
+#(0) `ls -1`: list files with each entry on an new line
+#	       - `p` puts a slash behind any directories (N/A) in this case, but good practice
+#	       - `rt` are for sorting in order of modification time-stamp and time reversal, i.e. oldest entries first
+#(1) Processing directories of 250 each towards the end of the 20k batch, all the time-stamps were the same or
+#	already sorted by oldest first, so we remove `-r`.
+#	Note: If the file names are ordered (0001-01000) we do not need `t` to get the correct ordering
+#(2) `grep`
+#(3) `cat`
+#(3) pads indexes up to 5 digits since we have 25000 files (up to 5 digits, i.e. less that 99999)
+#(4) maintains original extension.
+
+
+# TTS renaming:
+ls -1p *.wav | grep -v "/$" | cat -n | while read n f; do mv -n "${f}" "$(printf "yo_f_%04d" $((3000 + $n)) ).${f#*.}"; done
+
+# Check if all the files dey there
+seq -f "%04g" 3001 3250 | xargs -I {} ls yo_f_{}.wav >/dev/null
