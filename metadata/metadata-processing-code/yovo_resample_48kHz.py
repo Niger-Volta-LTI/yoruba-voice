@@ -5,8 +5,8 @@ import librosa
 import os
 
 
-resampled_audio_path = "/Users/iroro/Downloads/yovo/resampled_files/"
-all_audio_path = "/Users/iroro/Downloads/yovo/asr_20230927_FINAL"
+resampled_audio_path = "/Users/iroro/Downloads/yovo/FINAL_TTS_Oct_2023/resampled_files/"
+all_audio_path = "/Users/iroro/Downloads/yovo/FINAL_TTS_Oct_2023/Popóọlá_single_speaker_male"
 all_audio_list = [x for x in glob.glob(all_audio_path + "/*.wav")]
 
 # Iterate all 20k audio files and verify the sample rate is 48kHz, keep track of counts
