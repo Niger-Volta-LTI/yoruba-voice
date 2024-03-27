@@ -11,3 +11,14 @@ In 2022, we launched the curation and recording of 40 hours of high-fidelity spe
 - The Speech Recorder App we developed &rarr; [yoruba-voice-speech-recorder](https://github.com/Niger-Volta-LTI/yoruba-voice-speech-recorder)
 - Source code and various tools used can be found in this present repo
 
+### BibTeX entry and citation info
+If you make use of our dataset, please cite the our paper.
+```
+@misc{ogunremi2023iroyinspeech,
+      title={\`{I}r\`{o}y\`{i}nSpeech: A multi-purpose Yor\`{u}b\'{a} Speech Corpus}, 
+      author={Tolulope Ogunremi and Kola Tubosun and Anuoluwapo Aremu and Iroro Orife and David Ifeoluwa Adelani},
+      year={2023},
+      eprint={2307.16071},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
+}
