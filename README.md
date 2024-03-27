@@ -7,7 +7,7 @@ In 2022, we launched the curation and recording of 40 hours of high-fidelity spe
 
 - Official project blog &rarr; [www.yorubavoice.com](https://www.yorubavoice.com)
 - The dataset is hosted on the [ELRA-ELDA Portal](http://www.elra.info)
-- The [LREC-COLING 2024](https://lrec-coling-2024.org) paper &rarr; arXiv
+- The [LREC-COLING 2024](https://lrec-coling-2024.org) paper &rarr; [arXiv](https://arxiv.org/abs/2307.16071)
 - The Speech Recorder App we developed &rarr; [yoruba-voice-speech-recorder](https://github.com/Niger-Volta-LTI/yoruba-voice-speech-recorder)
 - Source code and various tools used can be found in this present repo
 
