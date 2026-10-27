@@ -19,7 +19,7 @@ $ pip install -r requirements.txt
 
 ## Run
 ```
-(venv) $ python g2p.py raw_vocab.txt
+(venv) $ python g2p.py raw_vocab_lag-nwu_slr86.txt
 ```
 
 The output is generated and written to the console as so: grapheme `....` IPA `....` XSAMPA
